@@ -1,0 +1,32 @@
+
+
+body {
+	 direction: rtl;
+  	 unicode-bidi: embed;
+  	 text-align: right;
+}
+
+h1,h2,h3,h4,h5,h6, p, .the-title, .the-excerpt, .mk-portfolio-view-all {
+	text-align: right;
+}
+
+#mk-header .header-logo {
+	left: auto !important;
+	float: right !important;
+	right:20px;
+}
+
+.mk-header-right {
+	right: auto !important;
+	left:30px;
+}
+.mk-header-start-tour {
+	padding-left: 0 !important;
+}
+.mk-header-start-tour i {
+	padding: 0 15px 0 0 !important;
+}
+
+.mk-clients-shortcode .mk-fancy-title span {
+	padding-left: 5px;
+}

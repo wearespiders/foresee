@@ -1,0 +1,304 @@
+/* Chosen Selectbox + Multiselect options */
+
+/* @group Base */
+.chzn-container {
+  position: relative;
+  display: inline-block;
+  font-size: 13px;
+  zoom: 1;
+  *display: inline;
+}
+.chzn-container .chzn-drop {
+  position: absolute;
+  top: 29px;
+  left: 0;
+  z-index: 1010;
+  border-top: 0;
+  background-color: #dddddd;
+}
+/* @end */
+
+/* @group Single Chosen */
+.chzn-container-single .chzn-single {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 0 0 0 8px;
+  height: 32px;
+  background-color: #dddddd;
+  color: #444444;
+  text-decoration: none;
+  white-space: nowrap;
+  line-height: 32px;
+}
+.chzn-container-single .chzn-default {
+  color: #999;
+}
+.chzn-container-single .chzn-single span {
+  display: block;
+  overflow: hidden;
+  margin-right: 26px;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+}
+.chzn-container-single .chzn-single abbr {
+  position: absolute;
+  top: 6px;
+  right: 26px;
+  display: block;
+  width: 12px;
+  height: 13px;
+  background: url('../../images/chosen-sprite.png') right top no-repeat;
+  font-size: 1px;
+}
+.chzn-container-single .chzn-single abbr:hover {
+  background-position: right -11px;
+}
+.chzn-container-single.chzn-disabled .chzn-single abbr:hover {
+  background-position: right top;
+}
+.chzn-container-single .chzn-single div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 32px;
+  height: 100%;
+  border-left:1px solid #cccccc;
+}
+.chzn-container-single .chzn-single div b {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url('../../images/chosen-sprite.png') no-repeat 0px 4px;
+}
+.chzn-container-single .chzn-search {
+  position: relative;
+  z-index: 1010;
+  margin: 0;
+  padding: 3px 4px;
+  white-space: nowrap;
+}
+.chzn-container-single .chzn-search input {
+  margin: 1px 0;
+  padding: 4px 20px 4px 5px;
+  outline: 0;
+  border: 1px solid #aaa;
+  background: #fff url('../../images/chosen-sprite.png') no-repeat 100% -22px;
+  background: url('../../images/chosen-sprite.png') no-repeat 100% -22px;
+  background: url('../../images/chosen-sprite.png') no-repeat 100% -22px;
+  background: url('../../images/chosen-sprite.png') no-repeat 100% -22px;
+  background: url('../../images/chosen-sprite.png') no-repeat 100% -22px;
+  background: url('../../images/chosen-sprite.png') no-repeat 100% -22px;
+  font-size: 1em;
+  font-family: sans-serif;
+}
+.chzn-container-single .chzn-drop {
+
+}
+/* @end */
+
+.chzn-container-single-nosearch .chzn-search input {
+  position: absolute;
+  left: -9000px;
+}
+
+
+
+
+
+
+
+
+
+
+/* @group Multi Chosen */
+.chzn-container-multi .chzn-choices {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  height: auto !important;
+  height: 1%;
+  background: #fff;
+  cursor: text;
+}
+.chzn-container-multi .chzn-choices li {
+  float: left;
+  list-style: none;
+}
+.chzn-container-multi .chzn-choices .search-field {
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+.chzn-container-multi .chzn-choices .search-field input {
+  margin: 1px 0;
+  padding: 8px;
+  height: 32px;
+  outline: 0;
+  border: 0 !important;
+  background: transparent !important;
+  -webkit-box-shadow: none;
+  -moz-box-shadow   : none;
+  box-shadow        : none;
+  color: #666;
+  font-size: 100%;
+  font-family: sans-serif;
+}
+.chzn-container-multi .chzn-choices .search-field .default {
+  color: #999;
+}
+.chzn-container-multi .chzn-choices .search-choice {
+  position: relative;
+  margin: 4px 0 4px 4px;
+  padding: 8px 20px 6px 5px;
+  background-color: #e4e4e4; 
+
+  color: #333;
+  font-size: 12px;
+  line-height: 12px;
+  cursor: default;
+}
+.chzn-container-multi .chzn-choices .search-choice.search-choice-disabled {
+  padding-right: 5px;
+  background-color: #e4e4e4;
+  color: #666;
+}
+.chzn-container-multi .chzn-choices .search-choice-focus {
+  background: #d4d4d4;
+}
+.chzn-container-multi .chzn-choices .search-choice .search-choice-close {
+  position: absolute;
+  top: 4px;
+  right: 5px;
+  display: block;
+  width: 12px;
+  height: 13px;
+  background: url('../../images/chosen-sprite.png') right 3px no-repeat;
+  font-size: 1px;
+}
+.chzn-container-multi .chzn-choices .search-choice .search-choice-close:hover {
+  background-position: -2px -45px;
+}
+.chzn-container-multi .chzn-choices .search-choice-focus .search-choice-close {
+  background-position: right -11px;
+}
+/* @end */
+
+
+
+
+
+/* @group Results */
+.chzn-container .chzn-results {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin: 0 4px 4px 0;
+  padding: 0 0 0 4px;
+  
+  max-height: 240px;
+  -webkit-overflow-scrolling: touch;
+}
+.chzn-container-multi .chzn-results {
+
+  margin: -1px 0 0;
+  padding: 0;
+}
+.chzn-container .chzn-results li {
+  display: none;
+  margin: 0;
+  padding: 7px 6px;
+  list-style: none;
+  line-height: 16px;
+}
+.chzn-container .chzn-results .active-result {
+  display: list-item;
+  cursor: pointer;
+}
+.chzn-container .chzn-results .highlighted {
+  background-color: #14a5ed;  
+  color: #fff;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3875d7', endColorstr='#2a62bc', GradientType=0 );
+}
+.chzn-container .chzn-results li em {
+  background: #feffde;
+  font-style: normal;
+}
+.chzn-container .chzn-results .highlighted em {
+  background: transparent;
+}
+.chzn-container .chzn-results .no-results {
+  display: list-item;
+  background: #f4f4f4;
+}
+.chzn-container .chzn-results .group-result {
+  color: #999;
+  font-weight: bold;
+  cursor: default;
+}
+.chzn-container .chzn-results .group-option {
+  padding-left: 15px;
+}
+.chzn-container-multi .chzn-drop .result-selected {
+  display: none;
+}
+.chzn-container .chzn-results-scroll {
+  position: absolute;
+  z-index: 1;
+  margin: 0 4px;
+  width: 321px; /* This should by dynamic with js */
+  background: white;
+  text-align: center;
+}
+.chzn-container .chzn-results-scroll span {
+  display: inline-block;
+  width: 9px;
+  height: 17px;
+  text-indent: -5000px;
+}
+.chzn-container .chzn-results-scroll-down {
+  bottom: 0;
+}
+.chzn-container .chzn-results-scroll-down span {
+  background: url('../../images/chosen-sprite.png') no-repeat -4px -3px;
+}
+.chzn-container .chzn-results-scroll-up span {
+  background: url('../../images/chosen-sprite.png') no-repeat -22px -3px;
+}
+/* @end */
+
+/* @group Active  */
+.chzn-container-active .chzn-single {
+
+}
+.chzn-container-active .chzn-single-with-drop {
+
+}
+.chzn-container-active .chzn-single-with-drop div {
+  border-left: none;
+  background: transparent;
+}
+
+.chzn-container-active .chzn-choices {
+
+}
+.chzn-container-active .chzn-choices .search-field input {
+  color: #111 !important;
+}
+/* @end */
+
+/* @group Disabled Support */
+.chzn-disabled {
+  opacity:0.5 !important;
+  cursor: default;
+}
+.chzn-disabled .chzn-single {
+  cursor: default;
+}
+.chzn-disabled .chzn-choices .search-choice .search-choice-close {
+  cursor: default;
+}

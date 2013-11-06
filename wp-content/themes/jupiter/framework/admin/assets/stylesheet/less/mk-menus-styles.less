@@ -1,0 +1,106 @@
+@import 'snippets';
+@import 'font-awesome';
+@import 'icomoon-fonts';
+
+
+.mk-mega-menu-wrapper {
+	padding:5px 10px; 
+	margin: 10px 0;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+
+	i {
+		font-size: 24px;
+		line-height: 24px;
+		background-color: #fff;
+		border:1px solid #ccc;
+		padding: 3px 4px;
+		min-width: 24px;
+		min-height: 24px;
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: 5px;
+	}
+}
+
+.mk-menus-main-title {
+	margin: 0 0 5px !important;
+	display: block;
+	font-size:20px !important;
+}
+
+.mk-menus-icon-manage {
+	margin-bottom: 20px;
+	display: block;
+	a {
+		margin-right: 10px;
+	}
+}
+
+.mk-font-icons-wrapper {
+	height: 400px;
+	overflow: scroll;
+	overflow-x:hidden;
+	padding: 10px;
+	a {
+		margin: 3px 3px 0 0;
+		text-decoration: none;
+		display: inline-block;
+		background-color: #fff;
+		height: 24px;
+		width: 24px;
+		text-align: center;
+		border:1px solid #ccc;
+		position: relative;
+		z-index: 1;
+		
+		outline: none;
+
+		&.mk-no-icon {
+			text-indent: -1000px;
+			font-size: 16px;
+			line-height: 24px;
+			background-color: #e4e4e4;
+		}
+
+		.selector-tick {
+			display: none;
+		}
+		&.current {
+				border-color: #0083cb;
+				.scale(1.4);
+				z-index: 2;
+				position: relative;
+			i {
+				color: #0083cb;
+				position: relative;
+				&:before {
+					position: relative;
+				}
+
+			}
+		}
+		&:hover {
+			.scale(2);
+			z-index: 2;
+		}
+	}
+	i {
+		font-size: 16px;
+		line-height: 24px;
+		color: #585858;
+		position: relative;
+		&:before {
+			position: relative;
+		}
+	}
+}
+
+.mk-visual-selector {
+	a {
+		position: relative;
+		display: inline-block;
+		line-height: 4px;
+	}
+}
+
